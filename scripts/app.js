@@ -38,6 +38,8 @@
     
     // create a reference to the firstName field
      var firstName = document.getElementById("firstName");
+     var lastName = document.getElementById("lastName");
+     var emal = document.getElementById("email");
     
     // create a reference to the form
     var contactForm = document.getElementById("contactForm");
@@ -66,6 +68,11 @@
     function showFormInput() {
         console.log("++++++++++++++++++++++++++++++++");
         console.log("First Name: " + firstName.value);
+        console.log("Last Name:"+  lastName.value);
+        console.log("Email:" + email.value);
+        console.log("Contact:" + contactNumber.value);
+        console.log("Message:" + message.value);
+        
         console.log("++++++++++++++++++++++++++++++++");
     }
     //define your paragraphs array;

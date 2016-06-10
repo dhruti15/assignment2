@@ -1,4 +1,13 @@
 /* main JavaScript file */
+/*
+* Author: Patel DHRUTI
+* Student Number: 300857555
+* Date: June 3, 2016
+* Date Modified: June 9, 2016
+* Description: The main javascript file for my potifolio
+* Website: http://comp125-assignment1-summer.azurewebsites.net
+* Version: Final Varsion
+*/
 // IIFE - Immediately Invoked Function Expression
 (function(){
     "use strict";
@@ -71,7 +80,7 @@
         console.log("Last Name:"+  lastName.value);
         console.log("Email:" + email.value);
         console.log("Contact:" + contactNumber.value);
-        console.log("Message:" + message.value);
+        console.log("Message:" + message.value)
         
         console.log("++++++++++++++++++++++++++++++++");
     }

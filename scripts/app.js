@@ -21,6 +21,53 @@
      var paragraphSixteen = document.getElementById("parasis");
      var paragraphSeventeen = document.getElementById("dh");
       var paragraphEighteen = document.getElementById("parao");
+        // create a reference to the sendButton
+    var sendButton = document.getElementById("sendButton");
+    
+    // check to see if sendButton exists
+    if(sendButton) {
+        // event listener
+        sendButton.addEventListener("click", sendButtonClick);
+    }
+    
+    
+    // event handler function
+    function sendButtonClick(event) {
+        console.log("clicked!");
+    }
+    
+    // create a reference to the firstName field
+     var firstName = document.getElementById("firstName");
+    
+    // create a reference to the form
+    var contactForm = document.getElementById("contactForm");
+    
+    
+    if(contactForm) {
+        // event listener with inline anonymous event handler function
+        contactForm.addEventListener("submit", function(event){
+            event.preventDefault();
+            console.log("submitted");
+            showFormInput();
+            contactForm.reset();
+        });
+    }
+    
+    
+    
+    
+    /**
+     * This function shows the input from each form field 
+     * on the console
+     * 
+     * @method showFormInput
+     * @return {void} 
+     */
+    function showFormInput() {
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("First Name: " + firstName.value);
+        console.log("++++++++++++++++++++++++++++++++");
+    }
     //define your paragraphs array;
     var paragraphs = [];
     //data for my pages 
